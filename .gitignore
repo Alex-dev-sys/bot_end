@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+venv/
+bot.log
+subscribers.txt
+.DS_Store
