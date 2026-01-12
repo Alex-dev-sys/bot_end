@@ -16,8 +16,8 @@ jobs:
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.KEY }}
-          # password: ${{ secrets.PASSWORD }} # Use this if password auth
+          # key: ${{ secrets.KEY }}
+          password: ${{ secrets.PASSWORD }}
           source: "pvp_bot.py,requirements.txt,README.md"
           target: "/root/pvp-bot"
           strip_components: 0
@@ -27,8 +27,8 @@ jobs:
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.KEY }}
-          # password: ${{ secrets.PASSWORD }}
+          # key: ${{ secrets.KEY }}
+          password: ${{ secrets.PASSWORD }}
           script: |
             cd /root/pvp-bot
             # Check if venv exists, create if not
